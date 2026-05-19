@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/pirate-weather",
+  "title": "Pirate Weather",
+  "description": "Pirate Weather forecast API (Dark Sky-compatible). Free key required.",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/pirate-weather",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-pirate-weather",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/pirate-weather/mcp"
+    }
+  ]
+}

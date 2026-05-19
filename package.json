@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-pirate-weather",
+  "version": "0.1.0",
+  "description": "Pirate Weather forecast API (Dark Sky-compatible). Free key required.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "pirate-weather"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-pirate-weather"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
