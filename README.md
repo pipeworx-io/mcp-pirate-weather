@@ -1,15 +1,23 @@
-# mcp-pirate-weather
+# @pipeworx/pirate-weather
 
-Pirate Weather MCP.
+[Pirate Weather](https://pirate-weather.apiable.io/) MCP — Dark Sky-compatible forecast API. Free key required (10k/mo).
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
+
+## Auth
+
+- Platform: `PLATFORM_PIRATEWEATHER_KEY`. BYO: `?_apiKey=…`.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `forecast` | Full forecast at point. |
-| `forecast_grid` | GFS/ECMWF grid forecast. |
+- `forecast(lat, lon, time?, exclude?, extend?, lang?, units?)` — full forecast at point
+- `forecast_grid(lat, lon, time?, units?)` — GFS/ECMWF grid output
+
+`exclude`: comma-sep `currently,minutely,hourly,daily,alerts`. `extend=hourly` returns 168h. `units`: `us` (default) | `si` | `ca` | `uk` | `uk2`.
+
+## Data source
+
+`https://api.pirateweather.net`
 
 ## Quick Start
 
@@ -25,7 +33,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -49,7 +57,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
