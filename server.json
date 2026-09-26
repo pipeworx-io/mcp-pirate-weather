@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/pirate-weather",
   "title": "Pirate Weather",
   "description": "Pirate Weather MCP.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/pirate-weather",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-pirate-weather",
