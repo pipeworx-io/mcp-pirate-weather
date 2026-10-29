@@ -1,0 +1,64 @@
+[
+  {
+    "name": "forecast",
+    "description": "Full forecast at point.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "time": {
+          "type": "string",
+          "description": "ISO 8601 or epoch seconds for historic."
+        },
+        "exclude": {
+          "type": "string"
+        },
+        "extend": {
+          "type": "string",
+          "description": "hourly"
+        },
+        "lang": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string",
+          "description": "us | si | ca | uk | uk2"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    }
+  },
+  {
+    "name": "forecast_grid",
+    "description": "GFS/ECMWF grid forecast.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        },
+        "time": {
+          "type": "string"
+        },
+        "units": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "lat",
+        "lon"
+      ]
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-pirate-weather",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Pirate Weather MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-pirate-weather": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "pirate-weather"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-pirate-weather.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/pirate-weather",
   "pipeworx": {
-    "sourceHash": "v1-3291145afa0ce0a1fd86f66415950c16966d851e091f8029c238bf6a98697b9c",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "pirate-weather",
+    "gatewaySlug": "pirate-weather",
+    "sourceHash": "v1-75fc19e3d9e83213de6eaffdf945cbf54a5dccb0853803bc87266a2708d9b0f6",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
