@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-pirate-weather",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Pirate Weather MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "pirate-weather",
     "gatewaySlug": "pirate-weather",
-    "sourceHash": "v1-75fc19e3d9e83213de6eaffdf945cbf54a5dccb0853803bc87266a2708d9b0f6",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-7e1dba7fb716bd264ac175d78081e60d12654b6d317587cd565b5fc1b06c686c",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
